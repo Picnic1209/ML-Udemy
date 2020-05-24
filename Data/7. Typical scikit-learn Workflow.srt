@@ -1,0 +1,1339 @@
+1
+00:00:00,560 --> 00:00:01,070
+Oh right.
+
+2
+00:00:01,060 --> 00:00:02,220
+All right.
+
+3
+00:00:02,250 --> 00:00:04,470
+So we're going to start off on the desktop.
+
+4
+00:00:04,470 --> 00:00:05,850
+Likely always do.
+
+5
+00:00:05,860 --> 00:00:10,830
+We're going to come into terminal and I'll zoom in here a little bit.
+
+6
+00:00:10,860 --> 00:00:16,980
+First thing is to get an environment activated so into a contact and list to remind ourselves of where
+
+7
+00:00:16,980 --> 00:00:18,180
+our environments are.
+
+8
+00:00:18,180 --> 00:00:23,670
+I've got three here the one we've been working with is in the sample project photo so I'm going to go
+
+9
+00:00:23,670 --> 00:00:29,490
+conduct activate and then copy this I could copy and paste it but I'm just gonna type it out because
+
+10
+00:00:29,880 --> 00:00:31,520
+that's what we're in the habit of doing.
+
+11
+00:00:31,790 --> 00:00:44,430
+So it uses slash Daniel slash desktop slash M.O. cause or typos galore today slash sample project your
+
+12
+00:00:44,670 --> 00:00:51,220
+file path here might be different unless your name's Daniel because otherwise great name.
+
+13
+00:00:51,760 --> 00:00:59,010
+And then here once you've got our environment activated we can see that this is changed from base to
+
+14
+00:00:59,100 --> 00:01:00,690
+this string here.
+
+15
+00:01:00,690 --> 00:01:01,200
+Wonderful.
+
+16
+00:01:01,200 --> 00:01:04,590
+That means our contact by environment is activated.
+
+17
+00:01:04,590 --> 00:01:05,650
+So then we'll go here.
+
+18
+00:01:05,700 --> 00:01:07,000
+Jupiter notebook.
+
+19
+00:01:07,020 --> 00:01:14,260
+So we can get our notebook server load it up wonderful this is gonna open our browser.
+
+20
+00:01:14,580 --> 00:01:18,480
+I haven't changed directory so that's why I'm at the top folder here.
+
+21
+00:01:18,510 --> 00:01:19,060
+But that's right.
+
+22
+00:01:19,080 --> 00:01:26,070
+I can change in a desktop email course sample project is where we've been working we've got our introduction
+
+23
+00:01:26,070 --> 00:01:28,600
+to map port lib num pi and pen is notebooks.
+
+24
+00:01:28,620 --> 00:01:40,280
+Wonderful but I'm going to create a new one because we're going through introduction to so I could learn.
+
+25
+00:01:40,310 --> 00:01:41,310
+Wonderful.
+
+26
+00:01:41,330 --> 00:01:43,820
+We'll put a beautiful heading up the top here.
+
+27
+00:01:44,030 --> 00:01:51,600
+Introduction to socket line brackets SDK learn to remind ourselves go.
+
+28
+00:01:51,620 --> 00:02:01,630
+This notebook demonstrates some of the most useful functions of the beautiful which it is beautiful.
+
+29
+00:02:01,800 --> 00:02:06,670
+So I could learn library wonderful will hit escape.
+
+30
+00:02:06,680 --> 00:02:11,680
+And aim to change that into markdown we'll run it and make we'll put in here what we're going to cover.
+
+31
+00:02:11,690 --> 00:02:18,880
+Just so just so we get a little bit of a highlight what we're going to cover.
+
+32
+00:02:19,170 --> 00:02:27,060
+So we're gonna start off with zero because we're going to index Python style zero will be an end to
+
+33
+00:02:27,060 --> 00:02:27,500
+end.
+
+34
+00:02:27,780 --> 00:02:30,440
+So I can't learn workflow.
+
+35
+00:02:30,630 --> 00:02:32,430
+Wonderful.
+
+36
+00:02:32,430 --> 00:02:35,660
+And then we're going to deep dive into each step of this workflow.
+
+37
+00:02:35,820 --> 00:02:42,550
+So we'll look at getting the data ready then will choose the right estimate.
+
+38
+00:02:42,550 --> 00:02:47,540
+Now estimate it is another word in so I can't learn you'll see in a second for machine learning models
+
+39
+00:02:47,550 --> 00:02:53,000
+so when you hear the word model or at machine learning algorithm or estimate.
+
+40
+00:02:53,130 --> 00:02:54,650
+That's what SBA loan uses for it.
+
+41
+00:02:54,660 --> 00:03:02,980
+They use the term estimate out for machine learning model output slash algorithm for our problems.
+
+42
+00:03:03,090 --> 00:03:13,950
+Three will fit the model slash algorithm slash estimate and use it to make predictions on our data.
+
+43
+00:03:14,070 --> 00:03:14,910
+Wonderful.
+
+44
+00:03:15,000 --> 00:03:24,160
+And then four will look at evaluating a model and then five we're going to improve the model and then
+
+45
+00:03:24,160 --> 00:03:31,540
+six will save and load and trained model and then seven why don't we put it all together.
+
+46
+00:03:33,160 --> 00:03:36,260
+Maybe putting it all together sounds a bit better there.
+
+47
+00:03:37,090 --> 00:03:38,750
+Wonderful.
+
+48
+00:03:38,840 --> 00:03:40,370
+All right well let's dive into it.
+
+49
+00:03:40,400 --> 00:03:45,800
+Let's start with zero will create another hitting so zero and end to end.
+
+50
+00:03:45,830 --> 00:03:50,300
+Now follow along if you can because that's the best but I'll go a little fast to be honest because I'm
+
+51
+00:03:50,300 --> 00:03:52,400
+kind of just talking through this as I go.
+
+52
+00:03:52,430 --> 00:03:57,860
+So if you can't keep pace that is absolutely fine you could potentially slow the video down or just
+
+53
+00:03:57,860 --> 00:04:03,200
+revisit it a few times until you see what's going on but don't worry you'll have access to all this
+
+54
+00:04:03,200 --> 00:04:05,060
+code here sorry.
+
+55
+00:04:05,440 --> 00:04:11,950
+And end to end socket learn workflow and we've got the steps right here what we have today is so let's
+
+56
+00:04:11,950 --> 00:04:15,210
+do it step one getting the data ready let's see what that looks like.
+
+57
+00:04:15,220 --> 00:04:20,020
+We had a little bit of experience in the past few sections on using a heart disease data.
+
+58
+00:04:20,050 --> 00:04:25,820
+So let's see if we can do that and maybe build a machine learning model on that heart disease data set.
+
+59
+00:04:26,230 --> 00:04:33,310
+All right we'll do one get the data ready import pandas as payday.
+
+60
+00:04:33,310 --> 00:04:36,090
+Now remember this the end to end like it.
+
+61
+00:04:36,190 --> 00:04:38,490
+So we're going to kind of breeze through these steps.
+
+62
+00:04:38,650 --> 00:04:41,020
+So we'll deep dive into each of them as we go.
+
+63
+00:04:41,410 --> 00:04:48,970
+So we'll get heart disease Eagles PD Jo Reed see us V now I believe I've moved everything into a data
+
+64
+00:04:48,970 --> 00:04:55,840
+folder so usually we could just put the CSP name here but I've changed it up and now all of our CSC
+
+65
+00:04:55,840 --> 00:05:02,500
+folders are within this data folder just to kind of clean and keep our sample project folder nice and
+
+66
+00:05:02,500 --> 00:05:03,460
+neat looking.
+
+67
+00:05:03,550 --> 00:05:06,610
+So that's why I've got the file path data here.
+
+68
+00:05:06,880 --> 00:05:12,210
+Heart disease DOD CSA and then we'll go to heart disease.
+
+69
+00:05:12,210 --> 00:05:17,930
+We'll view it just to make sure wonderful there's all of our roads there.
+
+70
+00:05:18,340 --> 00:05:25,600
+So what we're going to do with this is use these columns all across here age sex C.P. whatever these
+
+71
+00:05:25,600 --> 00:05:30,640
+are to try and predict the target which is 1 0 0 0 heart disease or not.
+
+72
+00:05:30,700 --> 00:05:37,450
+So the first things first is we need an X and you'll see this a lot in cyclone X is kind of the beaches
+
+73
+00:05:37,450 --> 00:05:43,660
+matrix which is essentially these columns and then Y will be this column.
+
+74
+00:05:43,660 --> 00:05:45,320
+So let's see how we do that.
+
+75
+00:05:45,400 --> 00:05:54,700
+So we create X may we'll put here create X which is called features matrix oftentimes has other names
+
+76
+00:05:54,700 --> 00:05:59,290
+could be data could be feature variables heart disease Dart.
+
+77
+00:05:59,320 --> 00:06:04,740
+We want to every column except the target column.
+
+78
+00:06:04,750 --> 00:06:06,420
+So anything access equals one.
+
+79
+00:06:06,460 --> 00:06:07,170
+Beautiful.
+
+80
+00:06:07,180 --> 00:06:14,650
+And then we're going to create Y which is label label matrix all labels.
+
+81
+00:06:14,650 --> 00:06:16,390
+Let's just call it labels.
+
+82
+00:06:16,390 --> 00:06:18,690
+Beautiful Y equals.
+
+83
+00:06:18,730 --> 00:06:20,020
+We want to heart disease.
+
+84
+00:06:20,030 --> 00:06:25,620
+Now we only want the target column to target.
+
+85
+00:06:25,840 --> 00:06:26,260
+Wonderful.
+
+86
+00:06:26,290 --> 00:06:30,720
+So we've created X and Y so basically X and Y X is just easier.
+
+87
+00:06:30,760 --> 00:06:33,240
+And why is this column here.
+
+88
+00:06:33,370 --> 00:06:34,290
+Wonderful.
+
+89
+00:06:34,320 --> 00:06:35,090
+Then what's next.
+
+90
+00:06:35,090 --> 00:06:41,710
+In socket learn when we go up here to choose the right estimate a slash algorithm for our problems.
+
+91
+00:06:41,800 --> 00:06:46,270
+Well our problem is classification because we want to classify whether someone has heart disease or
+
+92
+00:06:46,270 --> 00:06:47,070
+not.
+
+93
+00:06:47,080 --> 00:06:48,050
+So let's see that in action.
+
+94
+00:06:48,110 --> 00:06:57,740
+So to is choose the right model and have a parameters hybrid parameters like dials on a model that you
+
+95
+00:06:57,740 --> 00:07:00,110
+can tune to make it better or worse.
+
+96
+00:07:00,110 --> 00:07:06,800
+So let's use a random forest SDK line if you're wondering what is Daniel talking about where the random
+
+97
+00:07:06,800 --> 00:07:07,400
+forest.
+
+98
+00:07:07,400 --> 00:07:10,750
+Well we're going to see this in a little more debt than a future video.
+
+99
+00:07:10,780 --> 00:07:12,070
+But it's so far away.
+
+100
+00:07:12,080 --> 00:07:16,480
+Just imagine random forest from Cyclone dot ensemble.
+
+101
+00:07:16,610 --> 00:07:18,470
+Import random forest classifier.
+
+102
+00:07:18,470 --> 00:07:21,820
+This is just a classification machine learning model.
+
+103
+00:07:21,860 --> 00:07:23,900
+That is a motion need to know for now.
+
+104
+00:07:23,900 --> 00:07:30,470
+So it's capable of learning patterns in data and then classifying whether a sample a.k.a. a row is one
+
+105
+00:07:30,470 --> 00:07:32,040
+thing or another thing.
+
+106
+00:07:32,150 --> 00:07:38,300
+And so we'll instantiate that class using CSF which is short for classifier and socket line.
+
+107
+00:07:38,300 --> 00:07:43,940
+Other times you'll see a called model but we're gonna use CnF because we'll stick with the documentation
+
+108
+00:07:44,330 --> 00:07:49,610
+to see it angles random for us classifier beautiful.
+
+109
+00:07:49,670 --> 00:07:56,790
+And we're going to keep the default parameters hybrid parameters.
+
+110
+00:07:56,810 --> 00:07:57,530
+The default
+
+111
+00:08:00,110 --> 00:08:06,940
+hybrid parameters so CnF you can see what parameters your models using using CnF don't get parameter.
+
+112
+00:08:06,940 --> 00:08:13,740
+So we'll see this maybe take a little while to import in the meantime we'll create the heading for this
+
+113
+00:08:13,740 --> 00:08:23,390
+one so train is fit the model to the data I'm wondering why that's taking so long.
+
+114
+00:08:23,540 --> 00:08:25,090
+Maybe it will finish while we're typing.
+
+115
+00:08:25,100 --> 00:08:30,050
+So first of all we need to train our model on training set and tested on a test set.
+
+116
+00:08:30,050 --> 00:08:31,540
+So we need to create that.
+
+117
+00:08:31,880 --> 00:08:34,670
+What is this oh my bad.
+
+118
+00:08:34,690 --> 00:08:35,360
+We need this.
+
+119
+00:08:35,370 --> 00:08:36,580
+It's not an attribute.
+
+120
+00:08:36,880 --> 00:08:38,170
+It's a method that we get.
+
+121
+00:08:38,410 --> 00:08:42,910
+So this is a hybrid parameters with the little knobs on our machine learning model random forest classifier.
+
+122
+00:08:43,030 --> 00:08:49,810
+We'll have a look at these in a future section but we want to also fit the model to the training data
+
+123
+00:08:51,620 --> 00:08:54,760
+beautiful let's do that.
+
+124
+00:08:54,800 --> 00:08:57,680
+So we want to go from S.K. lined up model selection.
+
+125
+00:08:57,680 --> 00:09:03,620
+We need to split our data into training and test and we can do that with SBA loans train test bullet
+
+126
+00:09:04,040 --> 00:09:05,840
+train test split.
+
+127
+00:09:05,870 --> 00:09:06,560
+Wonderful.
+
+128
+00:09:06,570 --> 00:09:23,660
+And we're going to go X train x test y train y test equals train let's test the splint x y test size.
+
+129
+00:09:23,670 --> 00:09:28,980
+We want test size to be zero point two or whatever size you'd like to put in.
+
+130
+00:09:29,130 --> 00:09:35,760
+Essentially what this is going to do is split our data from X and Y into X train.
+
+131
+00:09:35,760 --> 00:09:39,330
+So training data y train x test and Y test.
+
+132
+00:09:39,330 --> 00:09:40,640
+So testing data.
+
+133
+00:09:40,740 --> 00:09:47,370
+So if you recall from way back in Section 1 we usually fit the model to training data and then evaluate
+
+134
+00:09:47,370 --> 00:09:52,330
+it see what it's learned on test data so data it's never seen before and we'll see this test size.
+
+135
+00:09:52,440 --> 00:09:58,320
+Well that means that 80 percent of the data will be used for training because it's zero point two because
+
+136
+00:09:58,320 --> 00:10:00,580
+test size is going to be 20 percent.
+
+137
+00:10:00,630 --> 00:10:05,880
+So if we had a thousand rows eight hundred of them would be used for training and 200 of them would
+
+138
+00:10:05,880 --> 00:10:08,460
+be used for testing but we're getting distracted here.
+
+139
+00:10:08,460 --> 00:10:11,740
+This is a whirlwind tour of S.K. line.
+
+140
+00:10:11,760 --> 00:10:13,710
+We want to go CSF.
+
+141
+00:10:13,770 --> 00:10:14,670
+Now we want to fit it.
+
+142
+00:10:14,700 --> 00:10:22,530
+We can do that with CnF dot Fed Ex train this is basically saying hey classification model random forest
+
+143
+00:10:22,860 --> 00:10:28,710
+find the patterns in the training data will go up shift and enter and beautiful.
+
+144
+00:10:28,770 --> 00:10:33,230
+This is going to give us a little warning here because there's something that's happening so let's read
+
+145
+00:10:33,230 --> 00:10:34,050
+a future warning.
+
+146
+00:10:34,050 --> 00:10:40,410
+The default value of an estimate is which is a parameter we go up here and estimate is warning.
+
+147
+00:10:40,410 --> 00:10:47,790
+That makes sense that it's giving us a warning will change from 10 inversion zero point to zero to 100
+
+148
+00:10:47,880 --> 00:10:49,800
+in zero point to two.
+
+149
+00:10:49,830 --> 00:10:50,680
+Mm hmm.
+
+150
+00:10:50,730 --> 00:10:52,800
+Well let's see if we can just update that now.
+
+151
+00:10:52,800 --> 00:10:57,650
+So an estimate is we're altering our hyper parameters here equals 100.
+
+152
+00:10:57,690 --> 00:11:01,840
+Now we shouldn't get that warning beautiful.
+
+153
+00:11:01,920 --> 00:11:03,410
+We don't.
+
+154
+00:11:03,420 --> 00:11:07,960
+We can get rid of that output by just putting that little semicolon.
+
+155
+00:11:07,970 --> 00:11:08,690
+Excellent.
+
+156
+00:11:08,690 --> 00:11:10,980
+Now our model is fit to the data.
+
+157
+00:11:11,030 --> 00:11:12,290
+So what can we do.
+
+158
+00:11:12,290 --> 00:11:14,390
+Well we can make a prediction.
+
+159
+00:11:14,460 --> 00:11:16,010
+So let's do that.
+
+160
+00:11:16,010 --> 00:11:18,180
+Make a prediction.
+
+161
+00:11:18,210 --> 00:11:19,680
+This is still step three by the way
+
+162
+00:11:22,450 --> 00:11:25,550
+why label equals C left.
+
+163
+00:11:25,600 --> 00:11:28,660
+Don't predict and we have to pass an empire right.
+
+164
+00:11:28,670 --> 00:11:35,260
+So let's do that no empire Ray 0 2 3 4 let's see what happens.
+
+165
+00:11:35,290 --> 00:11:36,600
+Are we in an era.
+
+166
+00:11:36,610 --> 00:11:39,960
+None Pi is not defined we should have done this right at the top.
+
+167
+00:11:40,060 --> 00:11:41,580
+Let's do that.
+
+168
+00:11:41,600 --> 00:11:44,210
+Import num pi as MP.
+
+169
+00:11:44,530 --> 00:11:45,750
+Beautiful.
+
+170
+00:11:45,760 --> 00:11:48,050
+Now this should work.
+
+171
+00:11:48,110 --> 00:11:49,230
+No it doesn't work.
+
+172
+00:11:49,230 --> 00:11:54,580
+Why doesn't it work are the input so the shape is incorrect.
+
+173
+00:11:54,580 --> 00:12:00,700
+Now the reason this is is because when you're trying to model on something that looks like X train which
+
+174
+00:12:00,940 --> 00:12:08,560
+X train happens here we can only make predictions on arrays that look like this because that is what
+
+175
+00:12:08,560 --> 00:12:10,300
+our model has learned.
+
+176
+00:12:10,300 --> 00:12:14,860
+So does this NPM rise 0 2 3 4.
+
+177
+00:12:14,860 --> 00:12:16,680
+Look anything like this.
+
+178
+00:12:16,690 --> 00:12:17,820
+No not at all.
+
+179
+00:12:17,920 --> 00:12:24,300
+But what does look like that is X test beautiful.
+
+180
+00:12:24,320 --> 00:12:27,550
+So what we can do is we can make some predictions.
+
+181
+00:12:27,560 --> 00:12:33,530
+So why spreads is a conventional name for making predictions on test data equals sale.
+
+182
+00:12:33,540 --> 00:12:38,540
+If our model don't predict x test now what does this look like.
+
+183
+00:12:38,540 --> 00:12:39,920
+Why spreads.
+
+184
+00:12:40,090 --> 00:12:43,070
+We've got an array of zeros and ones and now what does this look like.
+
+185
+00:12:43,070 --> 00:12:44,930
+We want Y test.
+
+186
+00:12:44,930 --> 00:12:48,140
+We also have an array of zeros and ones.
+
+187
+00:12:48,330 --> 00:12:50,180
+Hmm hmm I wonder what we could do with this.
+
+188
+00:12:50,330 --> 00:12:55,620
+Well go Step Four evaluate the model.
+
+189
+00:12:55,640 --> 00:13:00,560
+This is where we evaluate how good the predictions or how well the machine learning model we've just
+
+190
+00:13:00,560 --> 00:13:08,030
+trained our random for us classifier has done learning on the training data.
+
+191
+00:13:08,030 --> 00:13:16,980
+So why train let's do on the training data training data and test data is what we're doing here.
+
+192
+00:13:17,100 --> 00:13:21,750
+So see a left dot school where it's actually done very well.
+
+193
+00:13:22,360 --> 00:13:28,270
+So this is going to return if we press shift tab the mean accuracy on the given test data and labels.
+
+194
+00:13:28,270 --> 00:13:29,880
+So we've passed it the training data.
+
+195
+00:13:29,890 --> 00:13:33,150
+So the model has done 100 percent one point zero.
+
+196
+00:13:33,160 --> 00:13:36,180
+That's the maximum you can get with score on our training data.
+
+197
+00:13:36,180 --> 00:13:38,970
+Let's see how it's done on the test data.
+
+198
+00:13:39,100 --> 00:13:42,790
+Now if it gets 100 percent on the test data we might think that something's wrong.
+
+199
+00:13:42,790 --> 00:13:43,780
+Beautiful.
+
+200
+00:13:43,780 --> 00:13:44,210
+Excellent.
+
+201
+00:13:44,210 --> 00:13:45,910
+So what has happened here.
+
+202
+00:13:45,910 --> 00:13:50,140
+Well the model has found patterns in the training data so well that it's got 100 percent.
+
+203
+00:13:50,200 --> 00:13:54,260
+Why y because it got trained on the features.
+
+204
+00:13:54,490 --> 00:13:56,120
+So way back up here.
+
+205
+00:13:56,140 --> 00:14:02,710
+It got trained on on these as well as the labels so it had a chance to correct itself if it got something
+
+206
+00:14:02,710 --> 00:14:09,430
+wrong but it performs at 75 percent accuracy which means it gets three out of four predictions correct.
+
+207
+00:14:09,460 --> 00:14:15,580
+On the test data because it's never seen that data nor has it ever seen the labels.
+
+208
+00:14:15,580 --> 00:14:16,150
+All right.
+
+209
+00:14:16,390 --> 00:14:20,890
+So there are some more metrics that we can use rather than just accuracy.
+
+210
+00:14:20,920 --> 00:14:30,190
+So let's say that from S.K. line dot metrics import classification report because we have a classification
+
+211
+00:14:30,190 --> 00:14:30,910
+problem.
+
+212
+00:14:31,060 --> 00:14:36,850
+We want to confusion matrix and one on accuracy score just to see another way of getting the same thing
+
+213
+00:14:36,850 --> 00:14:37,680
+that we have here.
+
+214
+00:14:38,200 --> 00:14:46,640
+So we'll start off we'll go print a grant classification report and we want to compare what does this
+
+215
+00:14:46,640 --> 00:14:47,130
+take.
+
+216
+00:14:47,140 --> 00:14:49,650
+We can't press shift time because we haven't imported it yet.
+
+217
+00:14:49,700 --> 00:14:54,740
+I believe it takes y tests to test labels are true labels versus our predictions.
+
+218
+00:14:54,740 --> 00:15:01,110
+So what this is going to return is spoiler it lets you see a.
+
+219
+00:15:01,260 --> 00:15:07,670
+So what this shows us is some classification metrics that compare the test labels to the predictions.
+
+220
+00:15:07,680 --> 00:15:10,990
+The prediction labels that we made up here with our model.
+
+221
+00:15:11,070 --> 00:15:16,650
+So using the predictive function and then if we do the same again we can do our confusion matrix so
+
+222
+00:15:16,650 --> 00:15:23,930
+we get confusion matrix and we want Y test that's why Fred's wonderful.
+
+223
+00:15:23,970 --> 00:15:31,750
+And then we can do accuracy school and we want Y test y periods beautiful.
+
+224
+00:15:31,750 --> 00:15:35,530
+These are just some more steps that we can do to evaluate our model.
+
+225
+00:15:35,550 --> 00:15:40,130
+And so next step would be we're not really happy with with how the accuracy score is doing there.
+
+226
+00:15:40,130 --> 00:15:48,490
+So we want let's go to step five which is come back up here right to the top improve model.
+
+227
+00:15:48,590 --> 00:15:49,080
+OK.
+
+228
+00:15:49,400 --> 00:15:49,900
+Let's do it.
+
+229
+00:15:49,930 --> 00:15:52,330
+Let's see how we can improve a model.
+
+230
+00:15:52,700 --> 00:16:02,650
+We might go try different amount of an estimate is which is one of the hyper parameters a.k.a. dials
+
+231
+00:16:02,650 --> 00:16:05,800
+on our machine learning model that we can churn to try and improve it.
+
+232
+00:16:06,310 --> 00:16:07,490
+So let's see this in action.
+
+233
+00:16:07,530 --> 00:16:10,120
+MP We'll start off with a random seed.
+
+234
+00:16:10,120 --> 00:16:14,630
+Well the results are replicable and be random seed.
+
+235
+00:16:14,630 --> 00:16:20,310
+And I want for I in range 10 10 100.
+
+236
+00:16:20,320 --> 00:16:23,730
+Step can be 10 here and we won't print.
+
+237
+00:16:23,830 --> 00:16:31,570
+We'll give a little communication trying model with I estimate is wonderful.
+
+238
+00:16:31,690 --> 00:16:34,550
+Oh you've hit shift enter too quickly.
+
+239
+00:16:34,580 --> 00:16:36,480
+It's like I'm trigger happy and again.
+
+240
+00:16:36,530 --> 00:16:37,870
+My goodness.
+
+241
+00:16:37,890 --> 00:16:41,540
+OK now then we want to go see a laugh.
+
+242
+00:16:41,570 --> 00:16:47,210
+Eagles will instantiate another model random forest press tab classify beautiful.
+
+243
+00:16:47,210 --> 00:16:55,250
+We can thank you auto complete now estimate is eagles I wonderful so this is going to loop through and
+
+244
+00:16:55,250 --> 00:17:00,980
+try 10 and then 20 and then all out to 100 estimates because we're trying to figure out if we can improve
+
+245
+00:17:00,980 --> 00:17:07,120
+our model by adjusting one of the Hopper parameters because that's step 5 improved model so we'll go
+
+246
+00:17:07,530 --> 00:17:19,620
+print if model accuracy on tests and we'll go model dot score x test because we want to evaluate our
+
+247
+00:17:19,620 --> 00:17:28,200
+model on the test data we're just gonna learn on the training data and then evaluate itself on the test
+
+248
+00:17:28,200 --> 00:17:34,260
+data and then we'll put a little bit of a percentage sign here maybe limit it to two decimal places.
+
+249
+00:17:34,260 --> 00:17:36,180
+Does that make sense.
+
+250
+00:17:36,180 --> 00:17:39,640
+Let me read back this model accuracy on test set model school.
+
+251
+00:17:39,650 --> 00:17:46,890
+Yet we're just adding a little bit of communication here and then maybe we'll print a a space here so
+
+252
+00:17:46,890 --> 00:17:47,740
+we can kind of see.
+
+253
+00:17:47,760 --> 00:17:49,080
+Let's say this action.
+
+254
+00:17:49,570 --> 00:17:51,900
+Try and model with 10 estimate as wide in this work.
+
+255
+00:17:51,910 --> 00:17:53,290
+No model is not defined.
+
+256
+00:17:53,330 --> 00:18:00,640
+Whoops see I told you model can be used we need CnF CCL f remember is short for classifier and let's
+
+257
+00:18:00,640 --> 00:18:00,910
+do it.
+
+258
+00:18:02,540 --> 00:18:03,980
+How come it's not working again.
+
+259
+00:18:06,650 --> 00:18:11,490
+Random Forest classifier is not fitted yet call with fit.
+
+260
+00:18:12,410 --> 00:18:14,660
+Yes we've instantiated but we haven't.
+
+261
+00:18:14,660 --> 00:18:19,740
+How would you want to score a model we've never never fitted on our day yet.
+
+262
+00:18:20,110 --> 00:18:24,800
+They say this is great love coding full of errors.
+
+263
+00:18:25,040 --> 00:18:26,030
+Wonderful.
+
+264
+00:18:26,030 --> 00:18:30,560
+Now if we would look back through this you would say that the best model with the best accuracy if we
+
+265
+00:18:30,560 --> 00:18:34,310
+go back is 20 estimates.
+
+266
+00:18:34,430 --> 00:18:35,270
+Well there we go.
+
+267
+00:18:35,300 --> 00:18:42,380
+We've gone from what was our original one seventy five percent to 83 percent by adjusting one of the
+
+268
+00:18:42,380 --> 00:18:47,460
+high parameters of our model to 20 instead of the default which is 10 currently.
+
+269
+00:18:47,540 --> 00:18:51,010
+But it's gonna be updated to 100 and we're going really faster here.
+
+270
+00:18:51,020 --> 00:18:52,340
+What's a final stamp.
+
+271
+00:18:52,340 --> 00:18:57,450
+We go back up here right to the top save a model and load it.
+
+272
+00:18:57,500 --> 00:18:58,010
+Okay.
+
+273
+00:18:58,130 --> 00:18:59,420
+Most do it.
+
+274
+00:18:59,420 --> 00:19:03,670
+So we want to go six save a model and load it.
+
+275
+00:19:03,680 --> 00:19:09,320
+Now we can save the model with Python's pickle y rate so we're going to import pickle and then to save
+
+276
+00:19:09,320 --> 00:19:17,180
+the model will go pig or dump and we'll pass it our model a.k.a. ACL F4 classifier will pass and also
+
+277
+00:19:17,300 --> 00:19:19,680
+give it open with the file name that we want.
+
+278
+00:19:19,700 --> 00:19:27,050
+If I can remember these random forest Model 1 fancy name haha pickle and then we want to write binary
+
+279
+00:19:27,140 --> 00:19:29,820
+with WB wonderful.
+
+280
+00:19:29,990 --> 00:19:32,690
+So this is going to save lot.
+
+281
+00:19:32,840 --> 00:19:35,260
+See I'm not even following my own model here.
+
+282
+00:19:35,290 --> 00:19:38,650
+If in doubt run the code now this should have saved a model to file.
+
+283
+00:19:38,870 --> 00:19:45,960
+Let's go up and have a look if we refresh this beautiful random forest model there.
+
+284
+00:19:45,960 --> 00:19:48,800
+Now what happens if we tried to import that.
+
+285
+00:19:48,840 --> 00:20:00,940
+So we want to go loaded model Eagle's pickle dot load and we want to go open pass the file name random.
+
+286
+00:20:01,350 --> 00:20:02,370
+Can we do that.
+
+287
+00:20:02,370 --> 00:20:03,570
+Yes we can.
+
+288
+00:20:03,570 --> 00:20:04,910
+Tab auto complete.
+
+289
+00:20:04,920 --> 00:20:13,200
+And now this time we need be followed after that read binaries and then we'll go loaded model dot School
+
+290
+00:20:13,860 --> 00:20:20,910
+X test y test see what happens 73.
+
+291
+00:20:21,010 --> 00:20:25,510
+Now that should line up seventy three point seven with the last model that we tried up here and it does
+
+292
+00:20:26,110 --> 00:20:27,040
+wonderful.
+
+293
+00:20:27,070 --> 00:20:32,680
+Now we've just zoomed through that and took about 20 minutes or so to do an entire socket learn workflow
+
+294
+00:20:33,040 --> 00:20:34,430
+with a lot of talking.
+
+295
+00:20:34,450 --> 00:20:36,810
+So we started off with one getting the data ready.
+
+296
+00:20:36,820 --> 00:20:39,060
+We saw our data frame of heart disease.
+
+297
+00:20:39,190 --> 00:20:43,880
+Then we split it into x and y which is often what you'll do in supervised learning problems in psychic
+
+298
+00:20:43,890 --> 00:20:44,600
+line.
+
+299
+00:20:44,650 --> 00:20:47,920
+We're going to use that the features here to predict the target.
+
+300
+00:20:47,920 --> 00:20:48,920
+Wonderful.
+
+301
+00:20:49,000 --> 00:20:50,520
+And then we chose the right model.
+
+302
+00:20:50,540 --> 00:20:53,560
+We kind of skimmed over a bit of how you'd actually do that.
+
+303
+00:20:53,590 --> 00:20:59,050
+But from experience I know random forest classifier is pretty good at doing classification problems.
+
+304
+00:20:59,110 --> 00:21:00,880
+So we'll see how to do that.
+
+305
+00:21:00,880 --> 00:21:05,050
+And then we decided to use the default hyper parameters which are those little knobs you can turn on
+
+306
+00:21:05,050 --> 00:21:05,830
+a model.
+
+307
+00:21:06,010 --> 00:21:11,860
+And we saw how to fit the model to the training data so a.k.a. a model finding patterns in the training
+
+308
+00:21:11,860 --> 00:21:12,670
+data.
+
+309
+00:21:12,670 --> 00:21:18,850
+And first of all to even get our data from a big set into training a test we use this little helper
+
+310
+00:21:18,850 --> 00:21:20,620
+function from so I can't learn.
+
+311
+00:21:20,620 --> 00:21:21,560
+Thank you socket line.
+
+312
+00:21:22,210 --> 00:21:24,510
+And then we made a prediction or at least we tried to.
+
+313
+00:21:24,520 --> 00:21:30,550
+And then we realized hold on our model can't make predictions on things that aren't the same shape because
+
+314
+00:21:30,550 --> 00:21:33,110
+remember psychic loan is built on Empire raise.
+
+315
+00:21:33,160 --> 00:21:39,490
+So if we pass that array this bad boy here that isn't the same shape as the data that it's trained on
+
+316
+00:21:39,840 --> 00:21:41,180
+now it's going to throw us in error.
+
+317
+00:21:41,650 --> 00:21:49,090
+So we fix that error by asking our model to predict on X test which in turn it predicted a label y spreads
+
+318
+00:21:49,300 --> 00:21:55,600
+for each of our samples then we compared our predictions to the Y test through evaluation.
+
+319
+00:21:55,820 --> 00:22:01,990
+Our model got 100 percent on the training data but only got 75 percent accuracy on the test data which
+
+320
+00:22:01,990 --> 00:22:03,460
+actually is still pretty good.
+
+321
+00:22:03,490 --> 00:22:09,940
+A coin toss for 0 0 1 would be 50 percent so our models are halfway to being the perfect model.
+
+322
+00:22:09,940 --> 00:22:14,920
+And then we go here we tried a few more classification metrics so we got a little bit more of an insight
+
+323
+00:22:14,950 --> 00:22:16,740
+rather than just accuracy.
+
+324
+00:22:16,740 --> 00:22:22,540
+We did a confusion matrix and use the accuracy score function and then step 5.
+
+325
+00:22:22,540 --> 00:22:28,150
+We tried a bunch of different hyper parameters a.k.a. different estimate as we found out that maybe
+
+326
+00:22:28,150 --> 00:22:32,800
+20 estimate is the best for our model because it got the highest accuracy.
+
+327
+00:22:32,800 --> 00:22:39,520
+And then finally we saved a model and reloaded and it got the same score as our most recently trained
+
+328
+00:22:39,520 --> 00:22:43,280
+model which was ninety estimated seventy three point seventy seven.
+
+329
+00:22:43,480 --> 00:22:46,270
+And now this is a whole lot to take in.
+
+330
+00:22:46,360 --> 00:22:51,880
+I completely understand that we've gone through it relatively well actually quite fast but what we're
+
+331
+00:22:51,880 --> 00:22:55,770
+going to do is break down each of these steps throughout the next few videos.
+
+332
+00:22:56,050 --> 00:23:01,690
+So if you want to go back through try and put all the code that we've used into one cell if you can
+
+333
+00:23:01,840 --> 00:23:04,500
+see if you can get a model train can you get it saved.
+
+334
+00:23:04,510 --> 00:23:09,310
+Can you again reimpose it have a little practice but otherwise I'll see in the next video and we're
+
+335
+00:23:09,310 --> 00:23:13,870
+going to check out how to get our data ready for using it with machine learning models.

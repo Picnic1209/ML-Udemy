@@ -1,0 +1,371 @@
+1
+00:00:00,450 --> 00:00:01,330
+Hey there.
+
+2
+00:00:01,470 --> 00:00:02,500
+This is Future Daniel.
+
+3
+00:00:02,790 --> 00:00:03,690
+Why future Daniel.
+
+4
+00:00:03,780 --> 00:00:08,520
+Well because I've just finished off recording the last video for this entire section.
+
+5
+00:00:08,520 --> 00:00:13,830
+The psychic land section so you might see in an upcoming video I save to a list.
+
+6
+00:00:13,980 --> 00:00:15,030
+What we're covering.
+
+7
+00:00:15,030 --> 00:00:17,640
+Section by section an end to and workflow.
+
+8
+00:00:17,730 --> 00:00:19,040
+Getting the data ready.
+
+9
+00:00:19,050 --> 00:00:24,120
+Choosing the right estimated slash machine learning algorithm for our problems Fitting the model algorithm
+
+10
+00:00:24,270 --> 00:00:29,670
+to the data and using it to make predictions and a few more steps and what you'll probably quickly realize
+
+11
+00:00:29,670 --> 00:00:31,770
+is that this a pretty big section.
+
+12
+00:00:31,770 --> 00:00:38,370
+So if I scroll through the entire notebook all the code that we're gonna cover there is a lot here.
+
+13
+00:00:38,370 --> 00:00:38,890
+Right.
+
+14
+00:00:38,890 --> 00:00:39,620
+Right through.
+
+15
+00:00:39,640 --> 00:00:41,330
+Keep following through this is don't worry.
+
+16
+00:00:41,340 --> 00:00:48,600
+This is across the next 25 30 or so videos that you're gonna go through and here's that list that I
+
+17
+00:00:48,600 --> 00:00:49,800
+created right at the start right.
+
+18
+00:00:49,890 --> 00:00:56,490
+I think this is an in an upcoming video and now seeing this to start out with can be pretty intimidating.
+
+19
+00:00:56,490 --> 00:01:02,040
+That's what I want to sort of warn you right is that because there is so much because we are going through
+
+20
+00:01:02,040 --> 00:01:07,680
+a lot of different concepts of not only machine learning but psychic learn as itself.
+
+21
+00:01:07,680 --> 00:01:12,540
+I wanted to make an auxiliary resource that you can kind of come to and get a quick overview of what
+
+22
+00:01:12,540 --> 00:01:13,370
+we're doing.
+
+23
+00:01:13,380 --> 00:01:20,820
+So this list although it tells you what's happening it doesn't really tell you much other than just
+
+24
+00:01:20,820 --> 00:01:23,060
+the headings of the different sections.
+
+25
+00:01:23,190 --> 00:01:27,240
+So that's why there's resource that'll be available in the resources section there'll be some sort of
+
+26
+00:01:27,480 --> 00:01:29,100
+link in a place that you can find it.
+
+27
+00:01:29,190 --> 00:01:30,210
+So don't worry.
+
+28
+00:01:30,870 --> 00:01:33,690
+This is what we're covering in the cyclone introduction.
+
+29
+00:01:33,810 --> 00:01:39,790
+So this is kind of like a table of contents for this massive notebook that we're going to go through.
+
+30
+00:01:39,930 --> 00:01:45,490
+And don't worry even ones going through the entire cyclone section you're probably not going to know
+
+31
+00:01:45,490 --> 00:01:46,380
+all this off by heart.
+
+32
+00:01:46,950 --> 00:01:51,930
+And if it seems like I know all this off by heart and I were going through it I'm seeming like wow I
+
+33
+00:01:51,930 --> 00:01:53,060
+could never do that.
+
+34
+00:01:53,070 --> 00:01:54,460
+Don't be mistaken.
+
+35
+00:01:54,630 --> 00:01:59,190
+I've had a fair bit of practice with the cyclone library and that's why I'm able to go through and sort
+
+36
+00:01:59,190 --> 00:02:04,110
+of figure out things and know where to look and go to the documentation and go I can see this function
+
+37
+00:02:04,110 --> 00:02:06,270
+to do that this function to do that.
+
+38
+00:02:06,780 --> 00:02:12,660
+So going through it for the first time remind yourself learning something new takes time and learning
+
+39
+00:02:12,660 --> 00:02:16,750
+anything worthwhile definitely takes time especially machine learning.
+
+40
+00:02:16,890 --> 00:02:21,180
+And so this is the framework that we're going to be using for the introduction we saw this in the previous
+
+41
+00:02:21,180 --> 00:02:26,550
+video that Kino we went through step one we're going to get the data ready we're gonna find out how
+
+42
+00:02:26,550 --> 00:02:31,690
+to pick a cyclone model we're going to fit model system data so we can make a prediction we're gonna
+
+43
+00:02:31,740 --> 00:02:36,570
+evaluate our model see if it's worthwhile even using the model that we've got you'll see there's a couple
+
+44
+00:02:36,570 --> 00:02:41,130
+of different ways to use this depending on the model we're using will improve through experimentation
+
+45
+00:02:41,130 --> 00:02:47,220
+because after all machine learning is all about experimentation and the quicker you can reduce your
+
+46
+00:02:47,220 --> 00:02:51,570
+time between experiments the more you're going to get done the more insights you're going to figure
+
+47
+00:02:51,570 --> 00:02:56,580
+out about your data about your machine learning models and they're going to look at saving and reloading
+
+48
+00:02:56,670 --> 00:03:02,100
+trained machine learning models so you don't have to go through all these steps again you can save a
+
+49
+00:03:02,100 --> 00:03:07,860
+model send it to a friend send it to a colleague put it in your application and use it.
+
+50
+00:03:08,000 --> 00:03:13,220
+That was a bit of a mouthful in itself but if you go through this resource you'll see that I've got
+
+51
+00:03:13,220 --> 00:03:19,190
+at the top standard library imports treat this as like the mini version of this.
+
+52
+00:03:19,250 --> 00:03:24,410
+So this is the big behemoth that we're about to go through in this section through all 30 or so videos
+
+53
+00:03:24,830 --> 00:03:27,790
+but this is like the mini overview you can quickly refer to.
+
+54
+00:03:27,800 --> 00:03:31,150
+So you're not scrolling back and forth through all the stuff that's going in here.
+
+55
+00:03:31,620 --> 00:03:37,470
+So to begin with we've got some standard library imports we're going to see how we can import data sets
+
+56
+00:03:37,940 --> 00:03:43,160
+to use examples in the psychic line we're going to focus on a classification and a regression problem
+
+57
+00:03:43,580 --> 00:03:46,600
+using our heart disease and Boston data sets.
+
+58
+00:03:46,610 --> 00:03:48,330
+Step one is getting the data ready.
+
+59
+00:03:48,380 --> 00:03:48,680
+Right.
+
+60
+00:03:48,680 --> 00:03:54,170
+So each of these sections refers to a little step in this workflow get the data ready you'll see the
+
+61
+00:03:54,170 --> 00:03:59,930
+functions that we use there you'll see Section two is how we pick a model to how we choose a machine
+
+62
+00:03:59,930 --> 00:04:03,770
+learning model for what problem we're working on this is one of the toughest things that you'll see
+
+63
+00:04:03,770 --> 00:04:09,260
+in machine learning problems but again once we get familiar with this diagram the psychic machine learning
+
+64
+00:04:09,260 --> 00:04:16,050
+map you'll start to see ah it's actually not as hard as you once might have thought and then again there's
+
+65
+00:04:16,050 --> 00:04:20,640
+some code that you might use for choosing a model in instantiating one.
+
+66
+00:04:20,760 --> 00:04:24,930
+Then there's some code here you'll see the functions that we use to fit a model to training data to
+
+67
+00:04:24,930 --> 00:04:26,190
+make predictions.
+
+68
+00:04:26,280 --> 00:04:31,680
+We can view our predictions slash predicted probabilities predict the probabilities is done with predict
+
+69
+00:04:31,680 --> 00:04:32,370
+probe.
+
+70
+00:04:33,040 --> 00:04:36,550
+And if we come back down here we'll see how we can evaluate our model.
+
+71
+00:04:36,780 --> 00:04:41,640
+And there's a link here there's a you'll see in the documentation there's a few different ways to evaluate
+
+72
+00:04:41,640 --> 00:04:43,470
+different socket loan models.
+
+73
+00:04:43,470 --> 00:04:48,360
+This is a great section I highly suggest reading through here because it's one thing to train a machine
+
+74
+00:04:48,360 --> 00:04:48,970
+learning model.
+
+75
+00:04:48,990 --> 00:04:53,630
+It's another thing to check if it's doing the right thing what you want it to do.
+
+76
+00:04:53,760 --> 00:04:59,580
+Once we've gone through evaluating a model we'll see how we can improve our models through experimentation.
+
+77
+00:04:59,580 --> 00:05:04,740
+What we're going to focus on is hyper parameter tuning a.k.a. turning the settings and our model and
+
+78
+00:05:04,860 --> 00:05:05,680
+improving it.
+
+79
+00:05:05,760 --> 00:05:11,460
+Just like if we wanted to adjust our oven and while oven was cooking our favorite meal maybe it doesn't
+
+80
+00:05:11,460 --> 00:05:16,080
+do so well on 180 degrees but it does really well on 200 degrees.
+
+81
+00:05:16,080 --> 00:05:19,800
+The same thing goes with machine learning models out of the box.
+
+82
+00:05:19,860 --> 00:05:25,510
+It might work pretty well but if you adjust the settings are slightly you might get a better model.
+
+83
+00:05:25,560 --> 00:05:27,210
+So we'll see that in Section 5.
+
+84
+00:05:28,400 --> 00:05:33,560
+Then in section six we'll see how to save and reload our trained models so we can avoid going through
+
+85
+00:05:33,560 --> 00:05:37,680
+all the previous steps before if we wanted to save and share our model.
+
+86
+00:05:37,820 --> 00:05:43,340
+And then in Step 7 which is kind of a bonus which is not pictured in the workflow is we're gonna put
+
+87
+00:05:43,400 --> 00:05:49,790
+all of the above steps together in a single cell so that looks like a lot of code at the moment but
+
+88
+00:05:49,790 --> 00:05:53,630
+don't worry we're gonna step through it by the time you're at the end of this section.
+
+89
+00:05:53,660 --> 00:05:55,130
+None of this will be unfamiliar.
+
+90
+00:05:56,060 --> 00:06:01,130
+So with that being said Get yourself ready and get yourself excited pour yourself a cup of coffee or
+
+91
+00:06:01,130 --> 00:06:05,300
+go take a little walk or something get yourself in the mindset to learn machine learning because that's
+
+92
+00:06:05,300 --> 00:06:10,260
+what we're going to do we're going to get into the psychic loan library and all of its magical goodness.
+
+93
+00:06:10,340 --> 00:06:12,790
+So I'll see you in the next video.
